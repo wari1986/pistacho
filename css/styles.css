@@ -2440,6 +2440,7 @@ fieldset:disabled a.btn {
   color: #fff;
   background-color: #1d9dc3;
   border-color: #1d9dc3;
+  margin-top: 100px;
 }
 .btn-primary:hover {
   color: #1d9dc3;
@@ -10015,23 +10016,25 @@ hr.light {
   background-color: #fff;
   transition: background-color 0.2s ease;
 }
+
 #mainNav .navbar-brand {
   font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
+  font-weight: 100;
   color: #212529;
 }
 #mainNav .navbar-nav .nav-item .nav-link {
   color: #6c757d;
   font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
-  font-size: 0.9rem;
+  font-weight: 100;
+  font-size: 1rem;
   padding: 0.75rem 0;
 }
 #mainNav .navbar-nav .nav-item .nav-link:hover, #mainNav .navbar-nav .nav-item .nav-link:active {
   color: #1d9dc3;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active {
-  color: #1d9dc3 !important;
+  color: #ffff !important;
+
 }
 @media (min-width: 992px) {
   #mainNav {
@@ -10039,14 +10042,14 @@ hr.light {
     background-color: transparent;
   }
   #mainNav .navbar-brand {
-    color: rgba(255, 255, 255, 0.7);
+    color: #ffff;
   }
   #mainNav .navbar-brand:hover {
     color: #fff;
   }
   #mainNav .navbar-nav .nav-item .nav-link {
-    color: rgba(255, 255, 255, 0.7);
-    padding: 0 1rem;
+    color: #ffff;
+    padding: 0 1.5rem;
   }
   #mainNav .navbar-nav .nav-item .nav-link:hover {
     color: #fff;
@@ -10055,27 +10058,28 @@ hr.light {
     padding-right: 0;
   }
   #mainNav.navbar-scrolled {
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-    background-color: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+    background-color: #cccaca;
+    opacity: 0.9;
   }
   #mainNav.navbar-scrolled .navbar-brand {
-    color: #212529;
+    color: #ffff;
   }
   #mainNav.navbar-scrolled .navbar-brand:hover {
-    color: #1d9dc3;
+    color: #ffff;
   }
   #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link {
-    color: #212529;
+    color: #ffff;
   }
   #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link:hover {
-    color: #1d9dc3;
+    color: #ffff;
   }
 }
 
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/workspace.jpg");
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0) 0%, rgba(92, 77, 66, 0) 100%), url("../assets/img/bg-masthead1.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -10083,6 +10087,12 @@ header.masthead {
 }
 header.masthead h1 {
   font-size: 2.25rem;
+}
+
+header.masthead img {
+  height: 60px;
+  margin-top: 50px;
+  transition-timing-function: linear;
 }
 @media (min-width: 992px) {
   header.masthead {
